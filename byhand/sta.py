@@ -12,5 +12,11 @@ def check():
     print(df['val_loss'].idxmin())
 
 
+def show_loss():
+    df = pd.read_csv('train.csv')
+    df = df[['loss', 'val_loss']]
+    print(df)
+
+
 if __name__ == '__main__':
     check()
