@@ -12,7 +12,7 @@ git commit -m "building and pushing docs"
 git push origin master
 
 # switch branches and pull the data we want
-git checkout gh-pages
+git checkout -b gh-pages
 rm -rf .
 touch .nojekyll
 git checkout master docs/build/html
