@@ -27,3 +27,12 @@ def second(a):
     """
 
     pass
+
+
+def main():
+    print('installed successfully.')
+    pass
+
+
+if __name__ == '__main__':
+    main()

@@ -36,5 +36,10 @@ setup(
     author='svtter',
     install_requires=install_requires,
     dependency_links=dependency_links,
-    author_email='svtter@qq.com'
+    author_email='svtter@qq.com',
+    entry_points={
+        'console_scripts': [
+            'byhand=byhand:main'
+            ]
+        },
 )
