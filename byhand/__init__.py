@@ -29,9 +29,18 @@ def second(a):
     pass
 
 
+def generate_md():
+    from glob import glob
+    with open('content.md', 'w') as f:
+        for i in glob('*.md'):
+            title = '- [' + i[:-3] + ']'
+            url = '(' + i + ')'
+            line = title + url + '\n'
+            f.write(line)
+
 def main():
     print('installed successfully.')
-    pass
+    generate_md()
 
 
 if __name__ == '__main__':
