@@ -31,3 +31,9 @@ Example
 -------
 
 TBD
+
+
+Docs
+-------
+
+pdoc is also available.
